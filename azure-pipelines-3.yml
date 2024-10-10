@@ -1,0 +1,12 @@
+tun_interface:
+  name: tun0                # Name of the TUN interface
+  src_ip: 10.20.0.103       # Source IP address for the TUN interface
+  subnet_mask: 24           # Subnet mask (CIDR notation)
+
+udp_packet:
+  dst_ip: 10.20.0.106       # Destination IP address for UDP packets
+  dst_port: 5683            # Destination port number
+  src_port: 12345           # Source port number
+  total_packets: 50         # Number of UDP packets to send
+  ttl: 255                  # Time-to-live for IP packets
+  sleep_interval: 2         # Time interval (seconds) between packet sends
